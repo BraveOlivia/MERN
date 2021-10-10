@@ -9,6 +9,7 @@ import {
 import MainNavigation from "./shared/components/Menu/MainNavigation";
 import NewPlace from "./places/pages/NewPlaces";
 import User from "./user/pages/User";
+import UserPlaces from "./places/pages/UserPlaces";
 
 export default function App() {
   return (
@@ -18,6 +19,9 @@ export default function App() {
         <Switch>
           <Route path="/" exact>
             <User />
+          </Route>
+          <Route path="/:uID/places" exact>
+            <UserPlaces />
           </Route>
           <Route path="/place/new" exact>
             <NewPlace />

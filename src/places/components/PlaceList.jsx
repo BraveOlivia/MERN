@@ -16,7 +16,7 @@ const PlaceList = (props) => {
   }
 
   return (
-    <Card>
+    <ul className="place-list">
       {props.places.map((place) => (
         <PlaceItem
           key={place.id}
@@ -29,7 +29,7 @@ const PlaceList = (props) => {
           coordinates={place.location}
         />
       ))}
-    </Card>
+    </ul>
   );
 };
 

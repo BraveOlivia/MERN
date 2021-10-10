@@ -1,11 +1,10 @@
 import React from "react";
-import { Router, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./NavLinks.css";
 
 const NavLinks = () => {
   return (
-    // <Router>
     <ul className="nav-links">
       <NavLink to="/" exact>
         <li>ALL USERS</li>
@@ -20,7 +19,6 @@ const NavLinks = () => {
         <li>AUTHENTICATE</li>
       </NavLink>
     </ul>
-    // </Router>
   );
 };
 export default NavLinks;
