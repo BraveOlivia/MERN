@@ -5,7 +5,12 @@ import "./NewPlaces.css";
 const NewPlace = () => {
   return (
     <form className="place-form">
-      <Input element="input" type="text" label="title" />
+      <Input
+        element="input"
+        type="text"
+        label="Title"
+        errorMessage="Please enter valid input"
+      />
     </form>
   );
 };
